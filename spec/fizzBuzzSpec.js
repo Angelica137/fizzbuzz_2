@@ -7,6 +7,11 @@ describe('Fizzbuzz', function() {
       fizzbuzz = new Fizzbuzz();
       expect(fizzbuzz.play(15)).toEqual('FizzBuzz');
     });
+
+    it('Fizzbuzzes for 60', function() {
+      fizzbuzz = new Fizzbuzz();
+      expect(fizzbuzz.play(60)).toEqual('FizzBuzz');
+    });
   });
 });
 
