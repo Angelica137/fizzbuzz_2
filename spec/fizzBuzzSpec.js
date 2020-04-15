@@ -13,5 +13,12 @@ describe('Fizzbuzz', function() {
       expect(fizzbuzz.play(60)).toEqual('FizzBuzz');
     });
   });
+
+  describe('return Fizz when given multiple of 3', function() {
+    it('Fizzes for 3', function() {
+    fizzbuzz = new Fizzbuzz();
+    expect(fizzbuzz.play(3)).toEqual('Fizz');
+    });
+  });
 });
 
