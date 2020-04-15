@@ -17,7 +17,11 @@ describe('Fizzbuzz', function() {
 
   describe('return Fizz when given multiple of 3', function() {
     it('Fizzes for 3', function() {
-    expect(fizzbuzz.play(3)).toEqual('Fizz');
+      expect(fizzbuzz.play(3)).toEqual('Fizz');
+    });
+
+    it('Fizzes for 99', function() {
+      expect(fizzbuzz.play(99)).toEqual('Fizz');
     });
   });
 });
