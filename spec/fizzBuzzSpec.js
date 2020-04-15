@@ -29,6 +29,15 @@ describe('Fizzbuzz', function() {
     it('Buzzes for 5', function() {
       expect(fizzbuzz.play(5)).toEqual('Buzz');
     });
+    it('Buzzes for 85', function() {
+      expect(fizzbuzz.play(85)).toEqual('Buzz');
+    })
+  });
+
+  describe('return number when number is not multiple of 3, 5, or both', function() {
+    it('returns number for number not divisible by 3, 5 or both', function() {
+      expect(fizzbuzz.play(1)).toEqual(1);
+    })
   });
 });
 
