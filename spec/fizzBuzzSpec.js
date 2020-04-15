@@ -24,5 +24,11 @@ describe('Fizzbuzz', function() {
       expect(fizzbuzz.play(99)).toEqual('Fizz');
     });
   });
+
+  describe('return Buzz when given multiple of 5', function() {
+    it('Buzzes for 5', function() {
+      expect(fizzbuzz.play(5)).toEqual('Buzz');
+    });
+  });
 });
 
