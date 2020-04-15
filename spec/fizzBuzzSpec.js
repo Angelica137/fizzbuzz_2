@@ -37,7 +37,10 @@ describe('Fizzbuzz', function() {
   describe('return number when number is not multiple of 3, 5, or both', function() {
     it('returns number for number not divisible by 3, 5 or both', function() {
       expect(fizzbuzz.play(1)).toEqual(1);
-    })
+    });
+    it('returns number for number not divisible by 3, 5 or both', function() {
+      expect(fizzbuzz.play(97)).toEqual(97);
+    });
   });
 });
 
